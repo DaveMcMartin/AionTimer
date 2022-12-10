@@ -1,0 +1,47 @@
+object FormMain: TFormMain
+  Left = 668
+  Height = 139
+  Top = 146
+  Width = 300
+  BorderStyle = bsSingle
+  Caption = 'Aion Timer'
+  ClientHeight = 139
+  ClientWidth = 300
+  LCLVersion = '2.2.4.0'
+  object LabelTime: TLabel
+    Left = 10
+    Height = 85
+    Top = 10
+    Width = 280
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '00:00'
+    Font.Height = 52
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+  end
+  object ButtonStartStop: TButton
+    Left = 10
+    Height = 25
+    Top = 104
+    Width = 135
+    Caption = 'Start'
+    OnClick = ButtonStartStopClick
+    TabOrder = 0
+  end
+  object ButtonClear: TButton
+    Left = 150
+    Height = 25
+    Top = 104
+    Width = 140
+    Caption = 'Clear'
+    OnClick = ButtonClearClick
+    TabOrder = 1
+  end
+  object TimerClock: TTimer
+    Enabled = False
+    OnTimer = TimerClockTimer
+    Left = 271
+  end
+end
