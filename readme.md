@@ -1,6 +1,6 @@
 # Aion Timer
 
-Just a simple countdown timer. I made this project just to learn pascal.
+Just a simple timer. I made this project just to learn pascal.
 
 # Screenshot
 
